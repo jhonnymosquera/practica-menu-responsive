@@ -117,6 +117,10 @@ header {
 			.menu {
 				li {
 					margin-left: 2.5%;
+
+					a {
+						font-size: 120%;
+					}
 				}
 			}
 		}
@@ -129,6 +133,7 @@ header {
 			#logo {
 				width: 90%;
 			}
+
 			.menu {
 				display: none;
 
@@ -151,6 +156,18 @@ header {
 				margin-top: 10vh;
 				height: 90vh;
 				background-color: $base-color;
+
+				animation: menu-active 500ms;
+			}
+		}
+
+		@keyframes menu-active {
+			from {
+				left: -800px;
+			}
+
+			to {
+				left: 0px;
 			}
 		}
 	}
@@ -178,11 +195,10 @@ header {
 	}
 }
 
-
 @media all and (max-width: 280px) {
-	header{
-		nav{
-			#logo{
+	header {
+		nav {
+			#logo {
 				font-size: 80%;
 			}
 		}

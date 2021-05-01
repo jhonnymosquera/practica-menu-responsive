@@ -84,6 +84,9 @@ header nav .menu li a {
   header nav .menu li {
     margin-left: 2.5%;
   }
+  header nav .menu li a {
+    font-size: 120%;
+  }
 }
 @media all and (max-width: 736px) {
   header nav #logo {
@@ -108,6 +111,15 @@ header nav .menu li a {
     margin-top: 10vh;
     height: 90vh;
     background-color: #025202;
+    animation: menu-active 500ms;
+  }
+  @keyframes menu-active {
+    from {
+      left: -800px;
+    }
+    to {
+      left: 0px;
+    }
   }
 
   #btn-menu {
